@@ -1,0 +1,12 @@
+git init -> initialize local repository
+git status -> to check the status of the local repository
+git add . -> will add all the files in the repository to the staging area
+git add <file name> -> will add the specifiv file to the staging area
+git commit -m "message" -> it commits the files in the staging area
+git branch -M name -> creating a new branch
+git remote add name "URL"
+git push -u origin main -> pushes the files in staging area to the git cloud repository
+
+ADDITIONAL COMMANDS
+git clone "URL" -> to create a clone of the cloud repository on my local repository
+git pull origin main -> to pull the additional files from the cloud repository to the local repository
