@@ -3,10 +3,33 @@ git status -> to check the status of the local repository
 git add . -> will add all the files in the repository to the staging area
 git add <file name> -> will add the specifiv file to the staging area
 git commit -m "message" -> it commits the files in the staging area
-git branch -M name -> creating a new branch
+git branch -M main -> creating main branch
 git remote add name "URL"
 git push -u origin main -> pushes the files in staging area to the git cloud repository
 
 ADDITIONAL COMMANDS
 git clone "URL" -> to create a clone of the cloud repository on my local repository
 git pull origin main -> to pull the additional files from the cloud repository to the local repository
+git branch <name of the new branch> -> used to create  anew branch
+git branch -D <branch name> -> to delete a branch
+git branch -> to get the list of all the branches available
+git checkout <branch name> -> to switch between the branches
+git log -> to see the history of all the commands used on the branch
+git stash -> this creates a stash of changed/ modifies or added files to the branch 
+git stash pop -> this brings back the modified or added files from the stash back to the repository
+
+If we want to go back to any of the previous commits we need to use :
+
+git log > copy the commit id present
+git revert <copied commit id> -> brings back the commit done at this id
+
+
+git diff <commit id 1><commit id 2> -> it telles the difference between both the commits.
+git diff HEAD . -> it tells the difference between the last commit to the branch and current work on the branch
+
+MERGING THE BRANCHES 
+NOTE: To merge two branches, you should be on the branch to which you are merging.
+
+git merge <branch name> -> used to merge the branches
+
+git log --graph --pretty=oneline -> this command is used to check the commits on the branch. it is also used to check the flow of the commits done on the branches
